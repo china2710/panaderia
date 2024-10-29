@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PANES CON LOS QUE CONTAMOS</title>
+    <link rel="stylesheet" herf="estilo.css">
+</head>
+   
+    
+
+      
+</ul>
+
+</nav> 
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+
+
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 20px;
+        }
+        .catalogo {
+            list-style: none;
+            padding: 0;
+        }
+        .producto {
+            background-color: #ff0ebb;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            opacity: 0;
+            transform: translateY(20px) rotate(-5deg);
+            animation: fadeInUpRotate 0.7s forwards;
+        }
+        .producto img {
+            max-width: 100%;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 10px;
+        }
+        .producto h3 {
+            margin: 0 0 10px;
+        }
+        .producto p {
+            margin: 0;
+        }
+        @keyframes fadeInUpRotate {
+            to {
+                opacity: 1;
+                transform: translateY(0) rotate(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Catálogo de Panadería</h1>
+    <ul class="catalogo">
+        <li class="producto">
+            <img src="pan1.jpg" alt="Pan Integral">
+            <h3>Pan Integral</h3>
+            <p>Delicioso pan integral hecho con los mejores ingredientes.</p>
+        </li>
+        <li class="producto">
+            <img src="pan2.jpg" alt="Croissant">
+            <h3>Croissant</h3>
+            <p>Auténtico croissant francés, crujiente y mantecoso.</p>
+        </li>
+        <li class="producto">
+            <img src="pan3.jpg" alt="Pan de Chocolate">
+            <h3>Pan de Chocolate</h3>
+            <p>Pan dulce relleno de chocolate, perfecto para el desayuno.</p>
+        </li>
+    </ul>
+</body>
+</html>
